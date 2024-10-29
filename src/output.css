@@ -572,84 +572,8 @@ video {
   display: flex;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
-.h-2{
-  height: 0.5rem;
-}
-
-.h-6{
-  height: 1.5rem;
-}
-
-.h-12{
-  height: 3rem;
-}
-
-.h-28{
-  height: 7rem;
-}
-
-.h-32{
-  height: 8rem;
-}
-
-.h-60{
-  height: 15rem;
-}
-
-.h-72{
-  height: 18rem;
-}
-
-.h-80{
-  height: 20rem;
-}
-
-.h-auto{
-  height: auto;
-}
-
 .h-36{
   height: 9rem;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-12{
-  width: 3rem;
-}
-
-.w-28{
-  width: 7rem;
-}
-
-.w-32{
-  width: 8rem;
-}
-
-.w-40{
-  width: 10rem;
-}
-
-.w-72{
-  width: 18rem;
-}
-
-.w-80{
-  width: 20rem;
-}
-
-.w-96{
-  width: 24rem;
-}
-
-.w-auto{
-  width: auto;
 }
 
 .w-full{
@@ -662,22 +586,6 @@ video {
 
 .justify-center{
   justify-content: center;
-}
-
-.overflow-hidden{
-  overflow: hidden;
-}
-
-.rounded{
-  border-radius: 0.25rem;
-}
-
-.rounded-sm{
-  border-radius: 0.125rem;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 
 .border-b{
@@ -694,19 +602,14 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.bg-secondary-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 226 213 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-white{
+.bg-secondary-100{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(226 226 213 / var(--tw-bg-opacity));
 }
 
 .object-cover{
@@ -714,12 +617,12 @@ video {
      object-fit: cover;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-3{
   padding: 0.75rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-16{
@@ -734,10 +637,6 @@ video {
 
 .pb-2{
   padding-bottom: 0.5rem;
-}
-
-.text-center{
-  text-align: center;
 }
 
 .font-body{
@@ -763,12 +662,12 @@ video {
   font-weight: 700;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .font-extralight{
   font-weight: 200;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .uppercase{
@@ -777,6 +676,11 @@ video {
 
 .italic{
   font-style: italic;
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-gray-600{
@@ -794,37 +698,40 @@ video {
   color: rgb(136 136 131 / var(--tw-text-opacity));
 }
 
-.text-yellow-500{
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
-.text-green-700{
-  --tw-text-opacity: 1;
-  color: rgb(21 128 61 / var(--tw-text-opacity));
-}
-
 .text-yellow-600{
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
-.text-gray-500{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.shadow-md{
+.card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
-  }
+.badge{
+  position: absolute;
+  top: 0px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 226 213 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  --tw-text-opacity: 1;
+  color: rgb(136 136 131 / var(--tw-text-opacity));
+}
 
+@media (min-width: 640px){
   .sm\:h-48{
     height: 12rem;
   }
@@ -833,35 +740,8 @@ video {
     justify-content: flex-start;
   }
 
-  .sm\:justify-center{
-    justify-content: center;
-  }
-
-  .sm\:text-center{
-    text-align: center;
-  }
-
-  .sm\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:lowercase{
-    text-transform: lowercase;
-  }
-
-  .sm\:text-green-700{
-    --tw-text-opacity: 1;
-    color: rgb(21 128 61 / var(--tw-text-opacity));
-  }
-
-  .sm\:text-yellow-900{
-    --tw-text-opacity: 1;
-    color: rgb(113 63 18 / var(--tw-text-opacity));
   }
 }
