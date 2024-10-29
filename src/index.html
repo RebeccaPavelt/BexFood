@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="text-gray-600 font-body">
-    <div>
+    <div class="grid md:grid-cols-3">
       <!--start nav-->
-      <div>
+      <div class="md:col-span-1">
         <nav>
           <div>
             <h1
@@ -43,10 +43,16 @@
       </div>
       <!--end nav-->
 
-      <main class="px-16 py-6 bg-gray-200">
+      <main class="px-16 py-6 bg-gray-200 md:col-span-2">
         <div class="flex justify-end">
-          <a href="#" class="text-primary mr-2">Log In</a>
-          <a href="#" class="text-primary">Sign Up</a>
+          <a
+            href="#"
+            class="text-primary mr-2 button border-primary md:border-2"
+            >Log In</a
+          >
+          <a href="#" class="text-primary button border-primary md:border-2"
+            >Sign Up</a
+          >
         </div>
 
         <header>
@@ -59,7 +65,7 @@
             Latest Recipes
           </h4>
 
-          <div class="mt-8">
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!--cards go here-->
             <div class="card">
               <img
@@ -118,7 +124,7 @@
           <div class="mt-8">Cards</div>
 
           <div class="flex justify-center">
-            <button class="bg-secondary-100 text-secondary-200">
+            <button class="bg-secondary-100 text-secondary-200 button">
               Load more
             </button>
           </div>
