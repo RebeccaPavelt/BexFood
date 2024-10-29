@@ -1,4 +1,5 @@
 # BexFood
 
 ## TailwindCSS Practice
-# BexFood
+
+ A landing page for a recipe website with responsive desgin (mobile first).
