@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BexFood</title>
-    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="output.css" />
   </head>
   <body class="text-gray-600 font-body">
     <div class="grid md:grid-cols-3">
@@ -39,8 +39,8 @@
             </div>
           </div>
           <ul class="text-sm mt-6 hidden md:block" id="menu">
-            <li>
-              <a href="#" class="px-4 flex justify-end">
+            <li class="px-4">
+              <a href="#" class="flex justify-end">
                 <span class="mr-3 mb-2 font-bold">Home</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +130,7 @@
             <div class="card">
               <img
                 class="w-full h-36 sm:h-48 object-cover"
-                src="../public/img/pizza.jpg"
+                src="./img/pizza.jpg"
                 alt="veggie pizza"
               />
               <div class="p-3">
@@ -161,7 +161,7 @@
             <div class="card">
               <img
                 class="w-full h-36 sm:h-48 object-cover"
-                src="../public/img/chili.jpg"
+                src="./img/chili.jpg"
                 alt="bowl of chili"
               />
               <div class="p-3">
@@ -192,7 +192,7 @@
             <div class="card">
               <img
                 class="w-full h-36 sm:h-48 object-cover"
-                src="../public/img/veganbowl.jpg"
+                src="./img/veganbowl.jpg"
                 alt="bowl of asian veggies"
               />
               <div class="p-3">
@@ -226,9 +226,104 @@
             Most Popular
           </h4>
 
-          <div class="mt-8">Cards</div>
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <!--cards go here-->
+            <div class="card">
+              <img
+                class="w-full h-36 sm:h-48 object-cover"
+                src="./img/pizza.jpg"
+                alt="veggie pizza"
+              />
+              <div class="p-3">
+                <span class="font-bold">Veggie Pizza</span>
+                <p class="font-extralight text-gray-500 italic">
+                  Recipe by Bex
+                </p>
+              </div>
+              <div class="badge">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
 
-          <div class="flex justify-center">
+                <span>30 mins</span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="w-full h-36 sm:h-48 object-cover"
+                src="./img/chili.jpg"
+                alt="bowl of chili"
+              />
+              <div class="p-3">
+                <span class="font-bold">Chili sin Carne</span>
+                <p class="font-extralight text-gray-500 italic">
+                  Recipe by Bex
+                </p>
+              </div>
+              <div class="badge">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+                <span>25 mins</span>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="w-full h-36 sm:h-48 object-cover"
+                src="./img/veganbowl.jpg"
+                alt="bowl of asian veggies"
+              />
+              <div class="p-3">
+                <span class="font-bold">Asia Bowl</span>
+                <p class="font-extralight text-gray-500 italic">
+                  Recipe by Bex
+                </p>
+              </div>
+              <div class="badge">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 inline-block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+                <span>25 mins</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-6">
             <button
               class="bg-secondary-100 text-secondary-200 button transform hover:scale-125 hover:bg-opacity-50 transition duration-200 ease-out"
             >
@@ -238,6 +333,6 @@
         </div>
       </main>
     </div>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
